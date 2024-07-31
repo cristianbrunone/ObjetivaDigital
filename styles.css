@@ -1,0 +1,349 @@
+/* Define a cor de fundo da página */
+body {
+    background-color: #f8f9fa;
+    /* Branco acinzentado */
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    color: #212529;
+    /* Cor do texto padrão */
+}
+
+/* Define a cor de fundo da barra de navegação */
+.navbar-custom {
+    background-color: #ffffff;
+    /* Branco */
+    border-bottom: 1px solid #e0e0e0;
+    /* Borda inferior sutil */
+}
+
+/* Ajusta a cor dos links da barra de navegação */
+.navbar-custom .navbar-brand,
+.navbar-custom .nav-link {
+    color: #343a40de;
+    /* Cor do texto dos itens da navbar */
+}
+
+
+.navbar-custom .nav-link:hover {
+    color: #007bff;
+    /* Cor ao passar o mouse */
+}
+
+/* Ajusta a largura dos slides e o espaçamento entre eles */
+.logo-slider {
+    margin: 10% auto;
+    /* Ajuste o valor conforme necessário */
+    position: relative;
+    padding: 0 15%;
+    /* Adiciona mais espaço ao redor do slider */
+    background-color: #f6f1f1;
+    height: 120px;
+    overflow: hidden;
+    /* Oculta conteúdo que excede a altura */
+    max-width: 100%;
+    /* Garante que o contêiner não exceda a largura da tela */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Alinha o conteúdo ao centro */
+}
+
+/* Ajusta a largura dos slides e o espaçamento entre eles */
+.logo-slider .slick-slide {
+    padding: 0 10px;
+    /* Aumenta o espaçamento entre os slides */
+}
+
+.logo-slider .slick-track {
+    display: flex;
+    /* Garante que os itens fiquem alinhados na horizontal */
+}
+
+/* Define a cor das setas padrão */
+.slick-prev:before,
+.slick-next:before {
+    font-size: 24px;
+    /* Ajusta o tamanho das setas */
+    color: #6c757d;
+    /* Cor padrão das setas */
+    line-height: 1;
+    transition: color 0.3s ease;
+    /* Adiciona uma transição suave para a mudança de cor */
+}
+
+/* Cor das setas ao passar o mouse */
+.slick-prev:hover:before,
+.slick-next:hover:before {
+    color: #0056b3;
+    /* Cor das setas quando o mouse passa sobre elas */
+}
+
+/* Ajusta a posição das setas com margens laterais para criar espaço entre as imagens e as setas */
+.slick-prev,
+.slick-next {
+    z-index: 1;
+    /* Garante que as setas estejam acima dos slides */
+}
+
+.slick-prev {
+    left: 10%;
+    /* Ajusta a posição das setas à esquerda */
+    top: 50%;
+    /* Ajusta para o meio do slider */
+    transform: translate(-50%, -50%);
+    /* Centraliza verticalmente e posiciona a seta para a esquerda */
+}
+
+.slick-next {
+    right: 10%;
+    /* Ajusta a posição das setas à direita */
+    top: 50%;
+    /* Ajusta para o meio do slider */
+    transform: translate(50%, -50%);
+    /* Centraliza verticalmente e posiciona a seta para a direita */
+}
+
+/* Ajusta a largura das imagens no slider */
+.logo-slider img {
+    filter: grayscale(90%) brightness(90%);
+    margin: auto;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    /* Garante que a imagem mantenha sua proporção e ajuste ao contêiner */
+    transition: filter 0.3s ease;
+    /* Adiciona transição suave ao efeito hover */
+}
+
+/* Remove o filtro ao passar o mouse */
+.logo-slider img:hover {
+    filter: none;
+    /* Remove o filtro de escala de cinza e brilho */
+}
+
+/* Ajustes para telas grandes */
+@media (min-width: 1200px) {
+    .logo-slider img {
+        width: 60%;
+        /* Diminue a largura das imagens em telas grandes */
+    }
+}
+
+/* Ajustes para telas médias */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .logo-slider img {
+        width: 70%;
+        /* Ajusta a largura das imagens em telas médias */
+    }
+}
+
+/* Ajustes para telas pequenas */
+@media (max-width: 991px) {
+    .logo-slider {
+        height: 100px;
+        /* Mantém a altura menor em telas menores */
+    }
+
+    .logo-slider img {
+        width: 85%;
+        /* Mantém a largura das imagens em telas menores */
+        height: auto;
+        /* Mantém a proporção das imagens */
+    }
+}
+
+/* Estilos para os containers personalizados */
+.custom-container {
+    border-left: 5px solid #bebebe;
+    /* Borda inicial cinza */
+    border-top: 2px solid #eceaea;
+    border-right: 2px solid #e4e4e4;
+    border-bottom: 2px solid #e4e4e4;
+    ;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+    /* Animação suave da borda e fundo */
+    cursor: pointer;
+    /* Indica que o elemento é clicável */
+    border-radius: 6px;
+}
+
+/* Cores para o estado de hover */
+.custom-container:nth-of-type(1):hover {
+    border-left-color: #ff5733;
+    /* Cor específica para o primeiro container ao passar o mouse */
+}
+
+.custom-container:nth-of-type(2):hover {
+    border-left-color: #28a745;
+    /* Cor específica para o segundo container ao passar o mouse */
+}
+
+.custom-container:nth-of-type(3):hover {
+    border-left-color: #ffc107;
+    /* Cor específica para o terceiro container ao passar o mouse */
+}
+
+/* Estilos para o estado ativo */
+.custom-container.active {
+    background-color: #dadddf;
+    /* Cor de fundo padrão quando o contêiner está ativo */
+    color: #000;
+    /* Cor do texto quando o contêiner está ativo */
+}
+
+/* Adiciona borda ativa que combina com a cor de hover */
+.custom-container.active:nth-of-type(1) {
+    border-left-color: #ff5733;
+    /* Cor de borda para o primeiro container quando ativo */
+}
+
+.custom-container.active:nth-of-type(2) {
+    border-left-color: #28a745;
+    /* Cor de borda para o segundo container quando ativo */
+}
+
+.custom-container.active:nth-of-type(3) {
+    border-left-color: #ffc107;
+    /* Cor de borda para o terceiro container quando ativo */
+}
+
+/* Ajustes para o conteúdo */
+.content {
+    margin-top: 0.5rem;
+}
+
+/* Ajusta o layout dos painéis para serem exibidos lado a lado */
+.row>.col-md-8 {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+}
+
+.accordion-collapse {
+    flex: 1;
+    margin-right: 1rem;
+    /* Espaçamento entre os painéis */
+}
+
+/* Oculta os painéis não ativos */
+.accordion-collapse:not(.show) {
+    display: none;
+}
+
+/* Ajusta o layout dos painéis */
+#accordion {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    /* Espaçamento entre os painéis */
+}
+
+/* Ajusta a margem para os painéis */
+.accordion-collapse {
+    margin: auto !important;
+}
+
+/* Ajusta a posição do carrossel */
+.carousel {
+    width: 85%;
+    height: auto;
+    left: 5%;
+    right: 5%;
+    justify-content: center;
+}
+
+/* Ajuste a posição das setas de navegação */
+.carousel-control-prev,
+.carousel-control-next {
+    color: rgba(0, 0, 0, 0.3);
+    width: 5%;
+    background-color: rgba(242, 4, 4, 0);
+    /* Cor de fundo semi-transparente */
+}
+
+.carousel-control-prev {
+    left: -8%;
+}
+
+.carousel-control-next {
+    right: -8%;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.3);
+    /* Cor dos ícones */
+    border-radius: 50%;
+}
+
+/* Estilos para o Carrossel de Avatares */
+.avatar-slider {
+    padding: 0;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    /* Espaçamento entre os avatares */
+}
+
+.avatar-card {
+    text-align: center;
+    padding: 10px;
+}
+
+.avatar-img {
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid #dee2e6;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.avatar-info {
+    margin-top: 10px;
+
+}
+
+.avatar-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.avatar-description {
+    font-size: 0.85rem;
+    color: #6c757d;
+    /* Cinza escuro */
+}
+
+/* Ajustes de fundo para seções */
+.section,
+.section-painel {
+    background-color: #f1f3f5;
+    /* Cinza claro */
+}
+
+.section-painel {
+    background-color: #eeeaea;
+
+}
+
+/* Estilos para o rodapé */
+.custom-footer {
+    background-color: #f1f3f5;
+    /* Cinza claro */
+    text-align: center;
+    padding: 20px 0;
+    border-top: 1px solid #e0e0e0;
+    /* Borda superior sutil */
+}
+
+.custom-footer p {
+    margin-bottom: 10px;
+}
+
+.custom-footer .display-1 {
+    font-size: 2rem;
+
+    /* Tamanho da fonte no rodapé */
+}

@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css">
+    <link rel="stylesheet" href="/styles.css">
+    <title>Bootstrap 5</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-custom mt-4 mt-md-2 d-flex">
+        <div class="container">
+            <a class="navbar-brand me-auto" href="#">
+                <span class="fw-bold fs-3 display-1">objetiva</span>
+                <span class="fw-light fs-3 display-1">.digital</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="bi bi-list fs-3"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#construimos">Serviços</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#logo-slider">Clientes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#avatar-slider">Equipe</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Imagem de fundo (escondida em telas menores) -->
+    <div class="d-none d-md-block mt-4 mb-0 p-0">
+        <img src="assets/images/circuito.png" alt="Ondas de Circuito" class="img-fluid"
+            style="max-width: 320px; width: 100%;">
+    </div>
+
+    <!-- Grid com título e imagem -->
+    <div class="container mt-5">
+        <div class="row align-items-center text-center text-md-start">
+            <!-- Texto -->
+            <div
+                class="col-md-6 d-flex flex-column justify-content-center text-center text-md-start order-2 order-md-1">
+                <h3 class="text-primary fw-bold mb-1 fs-1">Tecnologia</h3>
+                <h2 class="fw-bold fs-1">para seu negócio</h2>
+                <p class="display-1 mt-3 text-secondary fs-4 d-none d-md-block me-md-5">
+                    A Objetiva viabiliza ferramentas e tecnologia para o desenvolvimento da sua
+                    empresa. Possuímos conhecimento para propor as melhores soluções, com qualidade e agilidade.
+                    Conte com a Objetiva para ser sua parceira de tecnologia!
+                </p>
+                <button type="button" class="btn btn-primary w-75  mt-3 d-none d-md-inline-block">Conheça
+                    nossas
+                    especialidades</button>
+                <button type="button" class="btn btn-outline-primary btn-lg mt-3 d-md-none">Conheça nossas
+                    especialidades</button>
+            </div>
+
+            <!-- Imagem -->
+            <div
+                class="col-md-6 d-flex justify-content-center justify-content-md-start mb-4 mb-md-0 order-1 order-md-2">
+                <img src="assets/images/imageObjetiva.png" alt="Descrição da Imagem" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+    <!-- Logo Slider -->
+    <div id="logo-slider" class="logo-slider mt-5">
+        <div class="item"><a href="#"><img src="assets/images/estacao.png" alt="Estação"></a></div>
+        <div class="item"><a href="#"><img src="assets/images/irineu.png" alt="Irineu"></a></div>
+        <div class="item"><a href="#"><img src="assets/images/megamania_sudoeste.png" alt="Megamania Sudoeste"></a>
+        </div>
+        <div class="item"><a href="#"><img src="assets/images/megasorte_live.png" alt="Megasorte Live"></a></div>
+        <div class="item"><a href="#"><img src="assets/images/trimania_florianopolis.png"
+                    alt="Trimania Florianópolis"></a></div>
+        <div class="item"><a href="#"><img src="assets/images/trimania_vale.png" alt="Trimania Vale"></a></div>
+    </div>
+
+    <section class="justify-content-center text-center">
+        <!-- Texto 2 -->
+        <div class="container mt-5" id="construimos">
+            <h3 class="fw-bold mb-1 fs-2">Construímos sistemas, apps e sites</h3>
+            <h2 class="display-1 mt-1 text-secondary fs-4">Para pessoas. Para empresas. Para você</h2>
+        </div>
+
+        <!-- Serviços e Painéis -->
+        <section class="container mt-lg-4 mt-4">
+            <div class="row justify-content-center align-items-start">
+                <!-- Coluna dos serviços -->
+                <div class="col-md-4 d-flex flex-column align-items-center mb-4">
+                    <div class="custom-container p-1 bg-light mb-3 text-center" data-bs-toggle="collapse"
+                        data-bs-target="#panel1">
+                        <div class="title h6 fs-5 text-start">Sistemas</div>
+                        <div class="content display-6 fs-6">Entregamos soluções sob medida para sua empresa. Metodologia
+                            própria e
+                            garantia de satisfação.</div>
+                    </div>
+                    <div class="custom-container p-1 bg-light mb-3 text-center" data-bs-toggle="collapse"
+                        data-bs-target="#panel2">
+                        <div class="title h6 fs-5 text-start">Apps Mobile</div>
+                        <div class="content display-6 fs-6">O futuro chegou, e com ele a portabilidade dos sistemas.
+                            Prepare uma
+                            bela
+                            experiência ao seu cliente.</div>
+                    </div>
+                    <div class="custom-container p-1 bg-light text-center" data-bs-toggle="collapse"
+                        data-bs-target="#panel3">
+                        <div class="title h6 fs-5 text-start">Websites</div>
+                        <div class="content display-6 fs-6">Do site institucional ao e-commerce. Do Design até o
+                            deploy
+                            em
+                            produção.</div>
+                    </div>
+                </div>
+
+                <!-- Painéis de conteúdo -->
+                <div class="col-md-8">
+                    <div id="accordion">
+                        <!-- Painel 1 com slider -->
+                        <div id="panel1" class="accordion-collapse collapse">
+                            <div id="carouselPanel1" class="carousel slide">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="assets/images/sistemas.png" class="d-block w-100"
+                                            alt="Descrição Slide 1">
+                                        <div class="carousel-caption d-none d-md-block"></div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/images/sistemas2.png" class="d-block w-100"
+                                            alt="Descrição Slide 2">
+                                        <div class="carousel-caption d-none d-md-block"></div>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselPanel1"
+                                    data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselPanel1"
+                                    data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                        <!-- Painel 2 com imagem -->
+                        <div id="panel2" class="accordion-collapse collapse">
+                            <div class="accordion-body text-center">
+                                <img src="assets/images/mobileapp.png" alt="Imagem do App Mobile"
+                                    class="img-fluid w-75 mx-auto">
+                            </div>
+                        </div>
+
+                        <!-- Painel 3 com slider -->
+                        <div id="panel3" class="accordion-collapse collapse">
+                            <div id="carouselPanel3" class="carousel slide">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="assets/images/mega_mobile.png" class="d-block w-100"
+                                            alt="Descrição Slide 1">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/images/live.png" class="d-block w-100" alt="Descrição Slide 2">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/images/objetiva.png" class="d-block w-100"
+                                            alt="Descrição Slide 3">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="assets/images/megasorte.png" class="d-block w-100"
+                                            alt="Descrição Slide 4">
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselPanel3"
+                                    data-bs-slide="prev">
+                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Previous</span>
+                                </button>
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselPanel3"
+                                    data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Carrossel de Avatares -->
+        <div id="avatar-slider" class="section m-1 p-4">
+            <h5 class="avatar-title fs-3 text-center m-0">Nossa equipe</h5>
+            <p class="avatar-description fs-4 text-center m-1">#querocafe</p>
+            <div class="avatar-slider m-3">
+                <div class="avatar-card">
+                    <img src="assets/images/emerson.png" class="avatar-img" alt="Avatar 1">
+                    <div class="avatar-info">
+                        <h5 class="avatar-title">Avatar 1</h5>
+                        <p class="avatar-description">Descrição do Avatar 1</p>
+                    </div>
+                </div>
+                <div class="avatar-card">
+                    <img src="assets/images/leonardo.png" class="avatar-img" alt="Avatar 2">
+                    <div class="avatar-info">
+                        <h5 class="avatar-title">Avatar 2</h5>
+                        <p class="avatar-description">Descrição do Avatar 2</p>
+                    </div>
+                </div>
+                <div class="avatar-card">
+                    <img src="assets/images/william.png" class="avatar-img" alt="Avatar 3">
+                    <div class="avatar-info">
+                        <h5 class="avatar-title">Avatar 3</h5>
+                        <p class="avatar-description">Descrição do Avatar 3</p>
+                    </div>
+                </div>
+                <div class="avatar-card">
+                    <img src="assets/images/fernando.png" class="avatar-img" alt="Avatar 4">
+                    <div class="avatar-info">
+                        <h5 class="avatar-title">Avatar 4</h5>
+                        <p class="avatar-description">Descrição do Avatar 4</p>
+                    </div>
+                </div>
+                <div class="avatar-card">
+                    <img src="assets/images/inge.png" class="avatar-img" alt="Avatar 5">
+                    <div class="avatar-info">
+                        <h5 class="avatar-title">Avatar 5</h5>
+                        <p class="avatar-description">Descrição do Avatar 5</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <main class="container py-5">
+            <div class="row">
+                <div class="col-md-6" id="contato">
+                    <h2 class="h4 text-primary">Entre em contato</h2>
+                    <p class="text-muted">Envie uma mensagem para falar conosco!</p>
+                    <form class="mt-4">
+                        <div class="mb-3">
+                            <label for="nome" class="form-label">Seu nome</label>
+                            <input type="text" class="form-control" id="nome" placeholder="Ex. João da Silva" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Seu Email</label>
+                            <input type="email" class="form-control" id="email" placeholder="Ex. joao@gmail.com"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="telefone" class="form-label">Telefone</label>
+                            <input type="tel" class="form-control" id="telefone" placeholder="Ex. (99) 9 9999-9999"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensagem" class="form-label">Mensagem</label>
+                            <textarea class="form-control" id="mensagem" rows="5" placeholder="Digite sua mensagem aqui"
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Enviar</button>
+                    </form>
+                </div>
+                <div class="col-md-6">
+                    <h2 class="h4 text-primary">Sede</h2>
+                    <p class="text-muted">Visite nosso QG!</p>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.155095682556!2d-48.87332709999999!3d-26.2287643!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x952638e2c1c28993%3A0x98e13080090f3d86!2sIFSC%20C%C3%A2mpus%20Joinville!5e0!3m2!1spt-BR!2sbr!4v1679610310828!5m2!1spt-BR!2sbr"
+                        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </main>
+
+        <footer class="container-fluid py-3 mt-5 custom-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12 text-center">
+                        <p class="text-muted">"O único lugar onde o sucesso vem antes do trabalho é no dicionário." -
+                            Albert
+                            Einstein</p>
+                        <span class="fw-bold fs-3 display-1">objetiva</span>
+                        <span class="fw-light fs-3 display-1">.digital</span>
+                    </div>
+                </div>
+            </div>
+        </footer>
+
+        <!-- Scripts -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
+        <script src="/page.js"></script>
+</body>
+
+</html>
