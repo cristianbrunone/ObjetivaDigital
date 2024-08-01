@@ -347,3 +347,7 @@ body {
 
     /* Tamanho da fonte no rodapé */
 }
+
+.max540 {
+    max-width: 540px;
+}
